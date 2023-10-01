@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weater App | Ahmar_Iftikhar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- main_container -->
+
+    <main class="container">
+
+        <!-- card -->
+
+        <section class="card">
+
+            <!-- search_block -->
+
+            <div class="search_block">
+
+                <!-- input -->
+
+                <input type="text" placeholder="Type your City here" id="Countary">
+
+                <!-- search_Btn -->
+
+                <button type="button" id="search_Btn">
+                    <img src="images/search.png" alt="">
+                </button>
+
+            </div>
+
+            <div class="error_box">
+                <small class="error_msg" style="display: none;"></small>
+            </div>
+
+            <!-- weather_img -->
+
+            <div class="weather_img">
+                <img src="images/clear.png" alt="">
+            </div>
+
+            <!-- temp -->
+
+            <h1 >
+                <span id="temp">--</span>°c
+            </h1>
+
+            <!-- city_name -->
+
+            <h1 id="city_name">
+                City/Countary
+            </h1>
+
+            <!-- humidity_wind_block -->
+
+            <div class="humidity_wind_block">
+
+                <!-- humidity_box -->
+
+                <div class="humidity_box">
+                    <div class="humidity_img">
+                        <img src="images/humidity.png" alt="">
+                    </div>
+                    <p>
+                        <span id="humidity">
+                            --
+                        </span>
+                        %
+                        <br>
+                        <small>Humidity</small>
+                    </p>
+                </div>
+
+                <!-- wind_speed_box -->
+
+                <div class="wind_speed_box">
+                    <div class="wind_speed_img">
+                        <img src="images/wind.png" alt="">
+                    </div>
+                    <p>
+                        <span id="wind_speed">
+                            --
+                        </span>
+                        Km/h
+                        <br>
+                        <small>Wind Speed</small>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script src="script.js"></script>
+</html>
